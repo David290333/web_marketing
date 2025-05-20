@@ -15,12 +15,10 @@
   }
   
   /* Container */
-.container {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 1rem;
-  box-sizing: border-box;
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
   }
   
   /* Navbar */
@@ -128,7 +126,7 @@
   
   /* Hero */
   .hero {
-    background: url('/images/background.png') center/cover no-repeat;
+    background: url('/images/background.png') top/cover no-repeat;
     border-radius: 0.75rem;
     margin: 0rem auto;
     padding: 3rem 2rem;
@@ -320,6 +318,10 @@
   .hide-on-mobile {
     display: none !important;
   }  
+    html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
   /* Navbar: skrýt odkazy, ukázat burger */
   .nav-links {
     display: none;
@@ -336,7 +338,7 @@
     z-index: 9998;
     padding: 2rem 1.5rem;
     align-items: center; /* centrování odkazů */
-    gap: 2rem;
+    gap: 1rem;
     font-size: 1.25rem;
     display: none;
     overflow-x: hidden;
