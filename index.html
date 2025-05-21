@@ -42,7 +42,6 @@
         <a href="#about">O nás</a>
         <a href="#services">Služby</a>
         <a href="#contact">Kontakt</a>
-        <a href="#references">Reference</a>
       </nav>
       <a href="#contact" class="btn btn-primary hide-on-mobile">Pojďme začít</a>
     </div>
@@ -141,29 +140,34 @@
   </section>
 
   <!-- Contact -->
+<!-- Contact -->
   <section id="contact" class="section contact">
     <div class="container">
       <h2>Kontakt</h2>
-      <form action="https://formsubmit.co/info@smmarketing.cz" method="POST" class="contact-form">
+      <form id="contactForm" action="https://formsubmit.co/info@smmarketing.cz" method="POST" class="contact-form">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" value="https://tvujweb.cz/dekujeme.html"> <!-- Volitelné přesměrování -->
+        <input type="hidden" name="_next" value="https://tvujweb.cz/dekujeme.html">
+
         <div class="form-group">
           <label for="name">Vaše jméno</label>
           <input type="text" id="name" name="name" placeholder="Tomáš Novák" required />
         </div>
+
         <div class="form-group">
           <label for="email">Váš e-mail</label>
           <input type="email" id="email" name="email" placeholder="tomas.novak@chcibytvidet.cz" required />
         </div>
+
         <div class="form-group">
           <label for="message">Vaše zpráva</label>
           <textarea id="message" name="message" rows="5" placeholder="Pěkný den, chtěl bych s vámi navázat spolupráci v oblasti..." required></textarea>
-      </form>    
+        </div>
 
-      <div class="submit-wrapper">
-       <button type="submit" form="contactForm" class="btn btn-primary">Odeslat</button>
-     </div>    
+        <div class="submit-wrapper">
+          <button type="submit" class="btn btn-primary">Odeslat</button>
+        </div>
+      </form>
     </div>
   </section>
 

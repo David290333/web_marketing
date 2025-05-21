@@ -12,18 +12,18 @@ document.addEventListener('DOMContentLoaded', () => {
   
       // Jednoduchá validace
       if (!name || !email || !message) {
-        alert('Prosím vyplňte všechna pole.');
+        alert('Please fill in all fields.');
         return;
       }
       // Validace e-mailu
       const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailPattern.test(email)) {
-        alert('Prosím zadejte platnou e‑mailovou adresu.');
+        alert('Please enter a valid email address.');
         return;
       }
   
       // Simulace odeslání
-      alert(`Děkujeme za vaši zprávu, ${name}!`);
+      alert(`Thank you for your message, ${name}!`);
       this.reset();
     });
   });
