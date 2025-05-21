@@ -151,26 +151,34 @@
   <section id="contact" class="section contact">
     <div class="container">
       <h2>Contact</h2>
-      <form action="https://formsubmit.co/info@smmarketing.cz" method="POST" class="contact-form">
+      <form id="contactForm" action="https://formsubmit.co/info@smmarketing.cz" method="POST" class="contact-form">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_next" value="https://tvujweb.cz/dekujeme.html"> <!-- Volitelné přesměrování -->
+
         <div class="form-group">
           <label for="name">Your Name</label>
           <input type="text" id="name" name="name" placeholder="Charlie Bennett" required />
         </div>
+
         <div class="form-group">
           <label for="email">Your Email</label>
           <input type="email" id="email" name="email" placeholder="charlie.bennett@iwanttobeseen.com" required />
         </div>
+
         <div class="form-group">
           <label for="message">Your Message</label>
           <textarea id="message" name="message" rows="5" placeholder="Good day! I’d love to get in touch and explore how we might collaborate on something great..." required></textarea>
-      </form>    
+        </div>
+
+        <div id="thankYouMessage" style="display: none; color: green; margin-top: 1rem;">
+          Thank you for your message!
+        </div>
 
       <div class="submit-wrapper">
        <button type="submit" form="contactForm" class="btn btn-primary">Send Message</button>
-     </div>    
+     </div>   
+      </form>   
     </div>
   </section>
 
