@@ -135,16 +135,18 @@
     margin-top: 2.5rem
   }
   .hero-content {
-    background: none;
-    padding: 5rem 2rem;
-    text-align: left;
-    color: white;
-    margin-left: 0rem
+  background: none;
+  padding: 5rem 2rem;
+  text-align: left;
+  color: #2D2D2D; /* antracitová pro jemnější kontrast */
+  margin-left: 0rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* jemný stín pro čitelnost */
   }
   .hero-content h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: rgb(10, 10, 10);
+    color: #1A1A40; /* tmavě modrá, profesionální kontrast */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
   }
   .hero-content p {
     color: #080808;
