@@ -138,23 +138,25 @@
   background: none;
   padding: 5rem 2rem;
   text-align: left;
-  color: #2D2D2D; /* antracitová pro jemnější kontrast */
+  color: #060606;
   margin-left: 0rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* jemný stín pro čitelnost */
   }
   .hero-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #1A1A40; /* tmavě modrá, profesionální kontrast */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+    font-size: 2.1rem; /* větší velikost pro vizuální shodu */
+    font-weight: 700; /* tučnější font */
+    line-height: 1.3; /* přiměřený vertikální rozestup */
+    color: #000; /* černá barva */
+    margin-bottom: 3rem; /* mezera od tlačítka */
+    font-family: "Arial", sans-serif; /* odpovídá stylu na obrázku */
+    text-shadow: none; /* na obrázku není patrný stín */
   }
-  .hero-content p {
+  /* .hero-content p {
     color: #060606;
     margin-bottom: 1.5rem;
     max-width: 700px;
     margin-left: 0rem;
     margin-right: auto;
-  }
+  } */
   
   /* Sections */
   .section {
