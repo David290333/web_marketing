@@ -20,8 +20,5 @@ document.addEventListener('DOMContentLoaded', () => {
       alert('Prosím zadejte platnou e‑mailovou adresu.');
       return;
     }
-
-    // ✅ Nesmí být e.preventDefault() zde – jinak se formulář neodešle
-    // FormSubmit se postará o zbytek automaticky
   });
 });
