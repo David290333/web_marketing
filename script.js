@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const email = this.email.value.trim();
     const message = this.message.value.trim();
 
+    // Validace
     if (!name || !email || !message) {
       e.preventDefault();
       alert('Prosím vyplňte všechna pole.');
@@ -20,13 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    e.preventDefault(); // Zabráníme výchozímu odeslání (abychom mohli ukázat zprávu)
-
-    thankYou.style.display = 'block';
-    form.reset();
-
-    setTimeout(() => {
-      thankYou.style.display = 'none';
-    }, 3000); // zpráva zmizí po 3 sekundách
+    // ✅ Nesmí být e.preventDefault() zde – jinak se formulář neodešle
+    // FormSubmit se postará o zbytek automaticky
   });
 });
