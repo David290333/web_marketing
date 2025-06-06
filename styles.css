@@ -231,6 +231,26 @@
     width: 1000px;
     margin-right: 0rem;
   }  
+.popup {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2563EB; /* modrá z webu */
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+  font-weight: 500;
+}
+.popup.show {
+  opacity: 1;
+  pointer-events: auto;
+}
   
   /* Testimonials */
   .testimonial {
