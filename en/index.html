@@ -181,6 +181,9 @@
           <textarea id="message" name="message" rows="5" placeholder="Good day! I’d love to get in touch and explore how we might collaborate on something great..." required></textarea>
         </div>
 
+         <!-- reCAPTCHA widget -->
+        <div class="g-recaptcha" data-sitekey="6LfR8ZErAAAAAIZ0Hq9KYM69agcYDUU0myrdUE5M"></div>
+
         <div id="thankYouMessage" style="display: none; color: green; margin-top: 1rem;">
           Thank you for your message!
         </div>
@@ -278,8 +281,10 @@
 
   <!-- Link to .js file with the form -->
   <script src="script.js"></script>
-   <!-- Link to .js file with the toggle -->
+  <!-- Link to .js file with the toggle -->
   <script src="toggle.js"></script>
+  <!-- Script for reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </body>
 </html>

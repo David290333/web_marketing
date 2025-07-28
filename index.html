@@ -179,6 +179,9 @@
           <textarea id="message" name="message" rows="5" placeholder="Pěkný den..." required data-key="contact_placeholder_message"></textarea>
         </div>
 
+        <!-- reCAPTCHA widget -->
+        <div class="g-recaptcha" data-sitekey="6LfR8ZErAAAAAIZ0Hq9KYM69agcYDUU0myrdUE5M"></div>
+
         <div id="thankYouMessage" style="display: none; color: green; margin-top: 1rem;" data-key="contact_thank_you">
           Děkujeme za vaši zprávu!
         </div>
@@ -308,6 +311,8 @@
       });
   });
   </script>
+  <!-- Script pro reCAPTCHu -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </body>
 </html>
