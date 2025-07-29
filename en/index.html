@@ -63,17 +63,6 @@
     </div>
   </section>
 
-  <!-- About Us -->
-  <section id="about" class="section about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>Welcome... At <strong>SM Marketing</strong>, we focus on <strong>effective business promotion, social media management</strong>, targeted <strong>ad campaigns, and team training in digital marketing</strong>.
-        We help companies grow, build their brand, reach new customers, and generate real results—whether you're based in the Czech Republic or entering the market from abroad.
-        No client is too small for us. We approach every project individually and with the utmost responsibility.
-      </p>
-    </div>
-  </section>
-
   <!-- Services -->
   <section id="services" class="section services">
     <div class="container">
@@ -146,7 +135,62 @@
       to <strong>move your company's marketing forward</strong>.
     </p>
   </div>
+  </section>
+
+<!-- Contact -->
+<section id="contact" class="section contact">
+  <div class="container">
+    <h2>Contact</h2>
+    <form id="contactForm" action="https://formsubmit.co/info@smmarketing.cz" method="POST" class="contact-form">
+      <input type="hidden" name="_captcha" value="true">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://smmarketing.cz/"> <!-- Volitelné přesměrování -->
+
+      <!-- Honeypot (neviditelné pole) -->
+      <input type="text" name="_honey" style="display:none">
+
+      <!-- Secret ID (ochrana proti botům) -->
+      <input type="hidden" name="_formsubmit_id" value="x8h3nd9a">
+
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Charlie Bennett" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="charlie.bennett@iwanttobeseen.com" required />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Good day! I’d love to get in touch and explore how we might collaborate on something great..." required></textarea>
+      </div>
+
+      <!-- reCAPTCHA widget -->
+      <div class="g-recaptcha" data-sitekey="6LfR8ZErAAAAAIZ0Hq9KYM69agcYDUU0myrdUE5M"></div>
+
+      <div id="thankYouMessage" style="display: none; color: green; margin-top: 1rem;">
+        Thank you for your message!
+      </div>
+
+      <div class="submit-wrapper">
+        <button type="submit" form="contactForm" class="btn btn-primary">Send Message</button>
+      </div>   
+    </form>   
+  </div>
 </section>
+
+  <!-- About Us -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Welcome... At <strong>SM Marketing</strong>, we focus on <strong>effective business promotion, social media management</strong>, targeted <strong>ad campaigns, and team training in digital marketing</strong>.
+        We help companies grow, build their brand, reach new customers, and generate real results—whether you're based in the Czech Republic or entering the market from abroad.
+        No client is too small for us. We approach every project individually and with the utmost responsibility.
+      </p>
+    </div>
+  </section>
 
   <!-- Recenze -->
   <section id="reference" class="section references">
@@ -154,44 +198,6 @@
       <h2>What our clients say</h2>
       <!-- Trustmary Google Reviews widget -->
       <script src="https://widget.trustmary.com/5VUS98EEq" async></script>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <form id="contactForm" action="https://formsubmit.co/info@smmarketing.cz" method="POST" class="contact-form">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" value="https://smmarketing.cz/"> <!-- Volitelné přesměrování -->
-
-        <div class="form-group">
-          <label for="name">Your Name</label>
-          <input type="text" id="name" name="name" placeholder="Charlie Bennett" required />
-        </div>
-
-        <div class="form-group">
-          <label for="email">Your Email</label>
-          <input type="email" id="email" name="email" placeholder="charlie.bennett@iwanttobeseen.com" required />
-        </div>
-
-        <div class="form-group">
-          <label for="message">Your Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Good day! I’d love to get in touch and explore how we might collaborate on something great..." required></textarea>
-        </div>
-
-         <!-- reCAPTCHA widget -->
-        <div class="g-recaptcha" data-sitekey="6LfR8ZErAAAAAIZ0Hq9KYM69agcYDUU0myrdUE5M"></div>
-
-        <div id="thankYouMessage" style="display: none; color: green; margin-top: 1rem;">
-          Thank you for your message!
-        </div>
-
-      <div class="submit-wrapper">
-       <button type="submit" form="contactForm" class="btn btn-primary">Send Message</button>
-     </div>   
-      </form>   
     </div>
   </section>
 

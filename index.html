@@ -63,22 +63,6 @@
     </div>
   </section>
 
-  <!-- About Us -->
-  <section id="about" class="section about">
-    <div class="container">
-      <h2 data-key="about_heading">Jste v dobrých rukách</h2>
-        <p data-key="about_paragraph_1">Za značkou <strong>SM Marketing</strong> stojí <strong>Mariana Halmanová</strong>, specialistka na sociální sítě, která má za sebou léta praxe jak v marketingové agentuře, tak jako úspěšná freelancerka. Právě s ní se nejspíš spojíte, pokud se rozhodnete svěřit propagaci své značky do našich rukou.</p>
-
-        <p data-key="about_paragraph_2">SM Marketing</strong> vznikl z touhy dělat věci jinak, <strong>kvalitněji, osobněji a s opravdovým zájmem o výsledky klienta</strong>. Naším cílem není jen „něco spravovat“, ale <strong>pomáhat značkám růst</strong>, komunikovat chytře, být vidět a budovat vztah s jejich cílovou skupinou.</p>
-
-        <p data-key="about_paragraph_3">Spolupracujeme výhradně s <strong>profesionály, kteří rozumí svému oboru</strong>, a zároveň se dokážou nad každým projektem <strong>zamyslet individuálně a do hloubky</strong>. Ke každému klientovi přistupujeme s respektem, trpělivostí a maximální péčí, od strategie přes obsah až po reporting.</p>
-
-        <p data-key="about_paragraph_4">Ať už právě začínáte, nebo potřebujete posunout dobře rozběhlý byznys, <strong>žádný projekt pro nás není příliš malý nebo nezajímavý</strong>. Naopak, věříme, že i malé značky si zaslouží velkou péči.</p>
-
-        <p data-key="about_paragraph_5">Věříme, že <strong>úspěšný marketing na sociálních sítích není náhoda</strong>. Je to výsledek dobře odvedené práce, smysluplného plánování, upřímného zájmu a lidského přístupu. A právě to vám nabízíme.</p>
-    </div>
-  </section>
-
   <!-- Services -->
   <section id="services" class="section services">
     <div class="container">
@@ -145,51 +129,72 @@
     </div>
   </section>
 
+<!-- Contact -->
+<section id="contact" class="section contact">
+  <div class="container">
+    <h2 data-key="contact_heading">Kontakt</h2>
+    <form id="contactForm" action="https://formsubmit.co/info@smmarketing.cz" method="POST" class="contact-form">
+      <input type="hidden" name="_captcha" value="true">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://smmarketing.cz/">
+
+      <!-- Honeypot (neviditelné pole) -->
+      <input type="text" name="_honey" style="display:none">
+
+      <!-- Secret ID (ochrana proti botům) -->
+      <input type="hidden" name="_formsubmit_id" value="x8h3nd9a">
+
+      <div class="form-group">
+        <label for="name" data-key="contact_label_name">Vaše jméno</label>
+        <input type="text" id="name" name="name" placeholder="Tomáš Novák" required data-key="contact_placeholder_name" />
+      </div>
+
+      <div class="form-group">
+        <label for="email" data-key="contact_label_email">Váš e-mail</label>
+        <input type="email" id="email" name="email" placeholder="tomas.novak@chcibytvidet.cz" required data-key="contact_placeholder_email" />
+      </div>
+
+      <div class="form-group">
+        <label for="message" data-key="contact_label_message">Vaše zpráva</label>
+        <textarea id="message" name="message" rows="5" placeholder="Pěkný den..." required data-key="contact_placeholder_message"></textarea>
+      </div>
+
+      <!-- reCAPTCHA widget -->
+      <div class="g-recaptcha" data-sitekey="6LfR8ZErAAAAAIZ0Hq9KYM69agcYDUU0myrdUE5M"></div>
+
+      <div id="thankYouMessage" style="display: none; color: green; margin-top: 1rem;" data-key="contact_thank_you">
+        Děkujeme za vaši zprávu!
+      </div>
+
+      <div class="submit-wrapper">
+        <button type="submit" class="btn btn-primary" data-key="contact_submit_text">Odeslat</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+  <!-- About Us -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 data-key="about_heading">Jste v dobrých rukách</h2>
+        <p data-key="about_paragraph_1">Za značkou <strong>SM Marketing</strong> stojí <strong>Mariana Halmanová</strong>, specialistka na sociální sítě, která má za sebou léta praxe jak v marketingové agentuře, tak jako úspěšná freelancerka. Právě s ní se nejspíš spojíte, pokud se rozhodnete svěřit propagaci své značky do našich rukou.</p>
+
+        <p data-key="about_paragraph_2">SM Marketing</strong> vznikl z touhy dělat věci jinak, <strong>kvalitněji, osobněji a s opravdovým zájmem o výsledky klienta</strong>. Naším cílem není jen „něco spravovat“, ale <strong>pomáhat značkám růst</strong>, komunikovat chytře, být vidět a budovat vztah s jejich cílovou skupinou.</p>
+
+        <p data-key="about_paragraph_3">Spolupracujeme výhradně s <strong>profesionály, kteří rozumí svému oboru</strong>, a zároveň se dokážou nad každým projektem <strong>zamyslet individuálně a do hloubky</strong>. Ke každému klientovi přistupujeme s respektem, trpělivostí a maximální péčí, od strategie přes obsah až po reporting.</p>
+
+        <p data-key="about_paragraph_4">Ať už právě začínáte, nebo potřebujete posunout dobře rozběhlý byznys, <strong>žádný projekt pro nás není příliš malý nebo nezajímavý</strong>. Naopak, věříme, že i malé značky si zaslouží velkou péči.</p>
+
+        <p data-key="about_paragraph_5">Věříme, že <strong>úspěšný marketing na sociálních sítích není náhoda</strong>. Je to výsledek dobře odvedené práce, smysluplného plánování, upřímného zájmu a lidského přístupu. A právě to vám nabízíme.</p>
+    </div>
+  </section>
+
   <!-- Recenze -->
   <section id="reference" class="section references">
     <div class="container">
       <h2>Co říkají naši klienti</h2>
       <!-- Trustmary Google Reviews widget -->
       <script src="https://widget.trustmary.com/5VUS98EEq" async></script>
-    </div>
-  </section>
-
-  
-  <!-- Contact -->
-  <section id="contact" class="section contact">
-    <div class="container">
-      <h2 data-key="contact_heading">Kontakt</h2>
-      <form id="contactForm" action="https://formsubmit.co/info@smmarketing.cz" method="POST" class="contact-form">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" value="https://smmarketing.cz/">
-
-        <div class="form-group">
-          <label for="name" data-key="contact_label_name">Vaše jméno</label>
-          <input type="text" id="name" name="name" placeholder="Tomáš Novák" required data-key="contact_placeholder_name" />
-        </div>
-
-        <div class="form-group">
-          <label for="email" data-key="contact_label_email">Váš e-mail</label>
-          <input type="email" id="email" name="email" placeholder="tomas.novak@chcibytvidet.cz" required data-key="contact_placeholder_email" />
-        </div>
-
-        <div class="form-group">
-          <label for="message" data-key="contact_label_message">Vaše zpráva</label>
-          <textarea id="message" name="message" rows="5" placeholder="Pěkný den..." required data-key="contact_placeholder_message"></textarea>
-        </div>
-
-        <!-- reCAPTCHA widget -->
-        <div class="g-recaptcha" data-sitekey="6LfR8ZErAAAAAIZ0Hq9KYM69agcYDUU0myrdUE5M"></div>
-
-        <div id="thankYouMessage" style="display: none; color: green; margin-top: 1rem;" data-key="contact_thank_you">
-          Děkujeme za vaši zprávu!
-        </div>
-
-        <div class="submit-wrapper">
-          <button type="submit" class="btn btn-primary" data-key="contact_submit_text">Odeslat</button>
-        </div>
-      </form>
     </div>
   </section>
 
