@@ -292,6 +292,38 @@
   .kurzy-list li {
     margin-bottom: 0.4rem;
   }
+  .kurzy .kurzy-note {
+    margin-top: -0.5rem;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #6B7280;
+  }
+  .kurzy-note a {
+    color: #2563EB;
+  }
+  .kurzy-form-box {
+    background: #fff;
+    border: 1px solid #E5E7EB;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    max-width: 600px;
+  }
+  .kurzy .kurzy-form-box h3 {
+    margin-top: 0;
+  }
+  .kurzy-form .btn {
+    width: auto;
+    margin: 0;
+  }
+  @media (max-width: 768px) {
+    .kurzy-form-box {
+      padding: 1rem;
+    }
+    .kurzy-form .btn {
+      width: 100%;
+    }
+  }
   
   /* Testimonials */
   .testimonial {
