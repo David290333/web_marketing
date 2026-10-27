@@ -292,6 +292,24 @@
   .kurzy-list li {
     margin-bottom: 0.4rem;
   }
+  .kurzy .kurzy-cta {
+    padding: 0.9rem 1.75rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+  }
+  .kurzy .kurzy-cta:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
+  }
+  @media (max-width: 768px) {
+    .kurzy .kurzy-cta {
+      width: 100%;
+      margin: 0;
+    }
+  }
   .kurzy .kurzy-note {
     margin-top: -0.5rem;
     font-style: italic;
