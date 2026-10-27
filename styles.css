@@ -319,6 +319,26 @@
   .kurzy-note a {
     color: #2563EB;
   }
+  .section.kurzy {
+    background: #fff;
+    border-top: 1px solid #E5E7EB;
+    border-bottom: 1px solid #E5E7EB;
+  }
+  .kurzy-badge {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    padding: 0.3rem 0.8rem;
+    background: #EFF6FF;
+    color: #2563EB;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border-radius: 999px;
+  }
+  .kurzy .kurzy-form-box {
+    background: #F9FAFB;
+  }
   .kurzy-form-box {
     background: #fff;
     border: 1px solid #E5E7EB;
