@@ -606,3 +606,31 @@
     margin-top: 0.5rem;
   }
 }
+
+  /* ===== Recenze (Trustmary widget) ===== */
+  /* Skrytí označení widgetu */
+  [data-tm-edit="branding"] {
+    display: none !important;
+  }
+  div[isafter="true"]:has([data-tm-edit="branding"]) {
+    display: none !important;
+  }
+  /* Menší mezera pod widgetem */
+  #reference {
+    padding-bottom: 0.5rem;
+  }
+  /* Viditelné přepínací body (aktivní černý, ostatní šedé) */
+  #reference .tm-carousel-dot .tm-carousel-dot-circle {
+    background: #9CA3AF !important;
+    opacity: 1 !important;
+  }
+  #reference .tm-carousel-dot[aria-selected="true"] .tm-carousel-dot-circle {
+    background: #111827 !important;
+  }
+  /* Tlačítko play/pauza */
+  #reference .tm-carousel-dots + div button,
+  #reference .tm-carousel-dots + div button svg,
+  #reference .tm-carousel-dots + div button svg path {
+    color: #111827 !important;
+    fill: #111827 !important;
+  }
