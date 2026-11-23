@@ -15,14 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
   
-// Čisté adresy sekcí: /kurzy místo /#kurzy (ostatní sekce bez # v adrese)
+// Čisté adresy sekcí: /kurzy místo /#kurzy (vyžaduje rewrite pravidla na Renderu)
 (function () {
-  const PATH_SECTIONS = ["about", "services", "kurzy", "reference", "contact"]; // sekce s vlastní adresou (vyžaduje rewrite na Renderu)
-
-  function goTo(id, smooth) {
-    const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: smooth ? "smooth" : "auto" });
-  }
+  const PATHS = { about: "o-nas", services: "sluzby", kurzy: "kurzy", reference: "reference", contact: "kontakt" };
+  const inEn = window.location.pathname.indexOf("/en") === 0;
 
   document.addEventListener("click", function (e) {
     const link = e.target.closest('a[href^="#"]');
@@ -32,14 +28,15 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!el) return;
     e.preventDefault();
     el.scrollIntoView({ behavior: "smooth" });
-    const inEn = window.location.pathname.indexOf("/en") === 0;
-    let url = inEn ? window.location.pathname : (PATH_SECTIONS.includes(id) ? "/" + id : "/");
+    const url = inEn ? window.location.pathname : (PATHS[id] ? "/" + PATHS[id] : "/");
     history.replaceState(null, "", url + window.location.search);
   });
 
   window.addEventListener("load", function () {
-    if (window.location.pathname.indexOf("/en") === 0) return;
-    const id = window.location.pathname.replace(/^\/|\/$/g, "");
-    if (PATH_SECTIONS.includes(id)) setTimeout(() => goTo(id, false), 100);
+    if (inEn) return;
+    const path = window.location.pathname.replace(/^\/|\/$/g, "");
+    const id = Object.keys(PATHS).find(k => PATHS[k] === path);
+    const el = id && document.getElementById(id);
+    if (el) setTimeout(() => el.scrollIntoView({ behavior: "auto" }), 100);
   });
 })();
