@@ -15,15 +15,29 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
   
-// Odkazy na sekce (#kurzy apod.) scrollují bez přidání #... do adresy
-document.addEventListener("click", function (e) {
-  const link = e.target.closest('a[href^="#"]');
-  if (!link) return;
-  const id = link.getAttribute("href").slice(1);
-  if (!id) return;
-  const target = document.getElementById(id);
-  if (!target) return;
-  e.preventDefault();
-  target.scrollIntoView({ behavior: "smooth" });
-  history.replaceState(null, "", window.location.pathname + window.location.search);
-});
+// Čisté adresy sekcí: /kurzy místo /#kurzy (ostatní sekce bez # v adrese)
+(function () {
+  const PATH_SECTIONS = ["kurzy"]; // sekce s vlastní adresou (vyžaduje rewrite na Renderu)
+
+  function goTo(id, smooth) {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: smooth ? "smooth" : "auto" });
+  }
+
+  document.addEventListener("click", function (e) {
+    const link = e.target.closest('a[href^="#"]');
+    if (!link) return;
+    const id = link.getAttribute("href").slice(1);
+    const el = id && document.getElementById(id);
+    if (!el) return;
+    e.preventDefault();
+    el.scrollIntoView({ behavior: "smooth" });
+    const url = PATH_SECTIONS.includes(id) ? "/" + id : "/";
+    history.replaceState(null, "", url + window.location.search);
+  });
+
+  window.addEventListener("load", function () {
+    const id = window.location.pathname.replace(/^\/|\/$/g, "");
+    if (PATH_SECTIONS.includes(id)) setTimeout(() => goTo(id, false), 100);
+  });
+})();
