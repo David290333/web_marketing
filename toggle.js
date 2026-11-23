@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
 // Čisté adresy sekcí: /kurzy místo /#kurzy (ostatní sekce bez # v adrese)
 (function () {
-  const PATH_SECTIONS = ["kurzy"]; // sekce s vlastní adresou (vyžaduje rewrite na Renderu)
+  const PATH_SECTIONS = ["about", "services", "kurzy", "reference", "contact"]; // sekce s vlastní adresou (vyžaduje rewrite na Renderu)
 
   function goTo(id, smooth) {
     const el = document.getElementById(id);
@@ -32,11 +32,13 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!el) return;
     e.preventDefault();
     el.scrollIntoView({ behavior: "smooth" });
-    const url = PATH_SECTIONS.includes(id) ? "/" + id : "/";
+    const inEn = window.location.pathname.indexOf("/en") === 0;
+    let url = inEn ? window.location.pathname : (PATH_SECTIONS.includes(id) ? "/" + id : "/");
     history.replaceState(null, "", url + window.location.search);
   });
 
   window.addEventListener("load", function () {
+    if (window.location.pathname.indexOf("/en") === 0) return;
     const id = window.location.pathname.replace(/^\/|\/$/g, "");
     if (PATH_SECTIONS.includes(id)) setTimeout(() => goTo(id, false), 100);
   });
