@@ -130,6 +130,7 @@ img{max-width:100%}
 
 /* Recenze */
 #googleReviews{min-height:260px}
+#googleReviews a[href*="elfsight.com"],#googleReviews .eapps-link{display:none!important}
 
 /* FAQ */
 .faq{display:grid;grid-template-columns:1fr 1.35fr;gap:65px}
