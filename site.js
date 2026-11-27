@@ -72,11 +72,60 @@
     document.getElementById('sampleVideo').replaceChildren(iframe);
   });
 
-  // ----- Potvrzení po odeslání formuláře (formsubmit přesměruje zpět s ?odeslano) -----
-  if (/[?&]odeslano/.test(location.search)) {
-    var toast = document.getElementById('toast');
+  // ----- Odesílání formulářů bez opuštění stránky (formsubmit AJAX) -----
+  var toast = document.getElementById('toast');
+  var toastTimer;
+  function showToast(text, ms) {
+    toast.textContent = text;
     toast.hidden = false;
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { toast.hidden = true; }, ms || 8000);
+  }
+
+  document.querySelectorAll('form[data-ajax]').forEach(function (form) {
+    form.addEventListener('submit', function (e) {
+      if (!window.fetch || !window.FormData) return; // starý prohlížeč: běžné odeslání
+      e.preventDefault();
+      var btn = form.querySelector('button[type="submit"]');
+      var label = btn.textContent;
+      var fd = new FormData(form);
+      if (fd.get('_honey')) { form.reset(); return; } // robot
+      fd.set('_captcha', 'false');
+      fd.delete('_next');
+      btn.disabled = true;
+      btn.textContent = 'Odesílám…';
+
+      var ctrl = window.AbortController ? new AbortController() : null;
+      var timer = setTimeout(function () { if (ctrl) ctrl.abort(); }, 20000);
+
+      fetch('https://formsubmit.co/ajax/info@smmarketing.cz', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: fd,
+        signal: ctrl ? ctrl.signal : undefined
+      }).then(function (r) { return r.json().catch(function () { return {}; }); })
+        .then(function (d) {
+          if (d && (d.success === 'true' || d.success === true)) {
+            form.reset();
+            showToast('Děkuji, zpráva byla odeslána. Brzy se vám ozvu.');
+          } else {
+            throw new Error((d && d.message) || 'fail');
+          }
+        })
+        .catch(function () {
+          showToast('Odeslání se nepovedlo. Napište mi prosím na info@smmarketing.cz nebo zavolejte na +420 775 377 054.', 12000);
+        })
+        .then(function () {
+          clearTimeout(timer);
+          btn.disabled = false;
+          btn.textContent = label;
+        });
+    });
+  });
+
+  // ----- Potvrzení po klasickém odeslání (záložní varianta, formsubmit přesměruje s ?odeslano) -----
+  if (/[?&]odeslano/.test(location.search)) {
+    showToast('Děkuji, zpráva byla odeslána. Brzy se vám ozvu.', 9000);
     setUrl(location.pathname);
-    setTimeout(function () { toast.hidden = true; }, 9000);
   }
 })();
