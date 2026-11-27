@@ -1,447 +1,385 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <link rel="icon" type="image/png" href="/images/logo.png">
-  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-key="meta_title">SM Marketing</title>
-  <meta name="description" content="SM Marketing nabízí správu sociálních sítí, online reklamu, digitální marketing a školení ve firmách. Pomáháme firmám růst a oslovit nové zákazníky v Česku i ze zahraničí." data-key="meta_description">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SM Marketing | Marketingové služby a kurzy</title>
+<meta name="description" content="SM Marketing – marketingové služby, správa sociálních sítí, reklamní kampaně a praktické online kurzy s Marianou Halmanovou">
+<link rel="canonical" href="https://www.smmarketing.cz/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="cs_CZ">
+<meta property="og:site_name" content="SM Marketing">
+<meta property="og:title" content="SM Marketing | Marketingové služby a kurzy">
+<meta property="og:description" content="Marketingové služby, správa sociálních sítí, reklamní kampaně a praktické online kurzy s Marianou Halmanovou">
+<meta property="og:url" content="https://www.smmarketing.cz/">
+<link rel="icon" type="image/png" href="/images/logo.png">
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+<link rel="preload" href="/fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/dm-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script>document.documentElement.className+=' js'</script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXE1LWBLBG"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-JXE1LWBLBG');
-    </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JXE1LWBLBG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-JXE1LWBLBG');
+</script>
 
-  <link rel="stylesheet" href="styles.css" />
-<!-- Cookie banner
-  <script src="https://web.cmp.usercentrics.eu/modules/autoblocker.js"></script>
-<script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="q4YYZ8uNWTqP6X" async></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "SM Marketing",
+  "url": "https://www.smmarketing.cz/",
+  "description": "Marketingové služby, správa sociálních sítí, reklamní kampaně a praktické online kurzy.",
+  "email": "info@smmarketing.cz",
+  "telephone": "+420775377054",
+  "founder": { "@type": "Person", "name": "Mariana Halmanová" },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Novosibřinská 672",
+    "addressLocality": "Praha",
+    "postalCode": "190 16",
+    "addressCountry": "CZ"
+  }
+}
+</script>
+
+<link rel="stylesheet" href="/site.css">
 </head>
-<body> -->
-
-<!-- Header / Navbar -->
-<header class="navbar">
-  <div class="container">
-    <a href="#" class="logo">
-      <img src="/images/logo.png" alt="Logo" class="logo-img" />
-      SM Marketing
-    </a>
-    <!-- <div class="lang-switcher">
-      <a href="/" class="lang">🇨🇿</a>
-      <span class="divider"></span>
-      <a href="/en/" class="lang">🇬🇧</a>
-    </div> -->
-    <div class="nav-group">
-      <nav class="nav-links">
-        <a href="#home">Domů</a>
-        <a href="#about">O nás</a>
-        <a href="#services">Služby</a>
-        <a href="#kurzy">Kurzy</a>
-        <a href="#reference">Recenze</a>
-        <a href="#contact">Kontakt</a>
-      </nav>
-      <a href="#contact" class="btn btn-primary hide-on-mobile">Pojďme začít</a>
+<body>
+<header class="nav">
+  <div class="container navinner">
+    <a href="#uvod" class="logo">SM marketing<span class="dot"></span></a>
+    <button class="mobile-nav-toggle" id="mobileNavToggle" type="button" aria-controls="siteNavLinks" aria-expanded="false">Menu</button>
+    <div class="navlinks" id="siteNavLinks">
+      <a href="#sluzby">Služby</a>
+      <a href="#kurzy">Kurzy</a>
+      <a href="#o-mne">O mně</a>
+      <a href="#recenze">Recenze</a>
+      <a href="#kontakt" class="btn">Kontakt</a>
     </div>
   </div>
-    <button class="menu-toggle" id="menuToggle" aria-label="Otevřít menu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </button>  
 </header>
 
-  <!-- Hero -->
-  <section id="home" class="hero">
-    <div class="container hero-content">
-         <h1 data-key="hero_heading_1">Krok za krokem ...</h1>
-          <h1 data-key="hero_heading_2">... budujeme váš sen</h1>
-      <a href="#contact" class="btn btn-primary" data-key="hero_cta_text">Pojďme začít</a>
-    </div>
-  </section>
-
-  <!-- Jsem v kurzu (jenom na týden)
-  <section id="workshop" class="section workshop">
-    <div class="container workshop">
-      <p style="margin-bottom: 24px;">
-        <strong>Vzdělávací kurz Správce sociálních sítí</strong> je určen pro všechny, kteří chtějí efektivně spravovat firemní 
-        profily na Facebooku a Instagramu nebo rozjet své podnikání. Kurz je zařazen do programu <strong>Jsem v kurzu
-        a z 82 % jej financuje Úřad práce ČR</strong>. Účastník tak hradí pouze zbývající část ceny.
-      </p>
-
-      <p style="margin-bottom: 24px;">
-        Součástí kurzu je přístup k záznamu semináře, prezentace se všemi probíranými tématy a odkazy na doporučené nástroje, 
-        možnost konzultace s lektorkou po celou dobu trvání kurzu.
-      </p>
-
-      <p style="font-size: 13px; margin-bottom: 24px;">
-        Poslední termín kurzu proběhne na konci listopadu 2025. Na kurz se můžete přihlásit 
-        <strong>nejpozději do 23. 10. 2025</strong> prostřednictvím stránek Úřadu práce ČR:
-      </p>
-
-      <p style="font-size: 13px; margin-bottom: 24px;">
-        <a href="https://www.uradprace.cz/vyhledani-rekvalifikacniho-kurzu#/rekvalifikacni-kurz-detail/22144" target="_blank" style="text-decoration: underline; color: inherit;">
-          https://www.uradprace.cz/vyhledani-rekvalifikacniho-kurzu#/rekvalifikacni-kurz-detail/22144
-        </a>
-      </p>
-    </div>
-  </section> -->
-
-  <!-- Services -->
-  <section id="services" class="section services">
-    <div class="container">
-      <h2>Služby</h2>
-      <div class="cards">
-        <div class="card">
-          <!-- Ikona: plán -->
-          <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2563EB">
-            <path d="M9 11h6v2H9zm0 4h4v2H9zm7-12h-1V2h-2v1H11V2H9v1H8c-1.1 0-2 .9-2 2v15a2 2 0 002 2h8a2 2 0 002-2V5c0-1.1-.9-2-2-2zM8 20V5h8v15H8z"/>
-          </svg>
-          <h3 data-key="service_1_title">Individuální marketingový plán</h3>
-          <p data-key="service_1_text">Vypracujeme strategii i rozpočet na míru – od cílení na správné publikum až po konkrétní kroky, jak zviditelnit vaši firmu online.</p>
-        </div>
-        <div class="card">
-          <!-- Ikona: megafon -->
-          <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="#2563EB" viewBox="0 0 24 24">
-            <path d="M3 10v4h2l3 5v-5h4l5 3V7l-5 3H8V5l-3 5H3z"/>
-          </svg>
-          <h3 data-key="service_2_title">Správa sociálních sítí a reklamních kampaní</h3>
-          <p data-key="service_2_text">Postaráme se o vaše profily, obsah, reklamy i analytiku. Vy se zatím můžete v klidu soustředit na svůj byznys.</p>
-        </div>
-        <div class="card">
-          <!-- Ikona: tužka -->
-          <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="#2563EB" viewBox="0 0 24 24">
-            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1.003 1.003 0 000-1.42l-2.34-2.34a1.003 1.003 0 00-1.42 0l-1.83 1.83 3.75 3.75 1.84-1.82z"/>
-          </svg>
-          <h3 data-key="service_3_title">Tvorba profesionálního obsahu</h3>
-          <p data-key="service_3_text">Navrhujeme vizuály, texty a videa, které budují důvěru, zaujmou a prodávají.</p>
-        </div>
-        <div class="card">
-          <!-- Ikona: komunita (tři osoby) -->
-          <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="#2563EB" viewBox="0 0 24 24">
-            <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05C17.16 13.36 20 14.28 20 15.5V19h4v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
-          </svg>
-          <h3 data-key="service_4_title">Budování komunity</h3>
-          <p data-key="service_4_text">Pomáháme vám vytvářet pevné vztahy se zákazníky – od prvního kliknutí až po dlouhodobou loajalitu.</p>
-        </div>
-                <div class="card">
-          <!-- Ikona: kniha -->
-          <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="#2563EB" viewBox="0 0 24 24">
-            <path d="M18 2H6a2 2 0 00-2 2v16a1 1 0 001.447.894L12 18.118l6.553 2.776A1 1 0 0020 20V4a2 2 0 00-2-2zm0 16.382l-6-2.54-6 2.54V4h12v14.382z"/>
-          </svg>
-          <h3 data-key="service_5_title">Marketingová školení</h3>
-          <p data-key="service_5_text">Nabízíme praktická školení pro jednotlivce i firmy. Pomůžeme vám nastavit marketing, aby byl funkční a dlouhodobě udržitelný.</p> 
-        </div>
-                <div class="card">
-          <!-- Ikona: zeměkoule -->
-          <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="#2563EB" viewBox="0 0 24 24">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10
-                    10-4.48 10-10S17.52 2 12 2zm0 18c-1.85 0-3.55-.63-4.9-1.69l6.19-6.19 4.24 4.24A8.005 8.005 0 0112 20zM4 12c0-1.85.63-3.55 1.69-4.9l6.19 6.19-4.24 4.24A8.005 8.005 0 014 12z"/>
-          </svg>
-          <h3 data-key="service_6_title">Pomáháme firmám uspět na českém trhu</h3>
-          <p data-key="service_6_text">Zajistíme lokalizaci, obsahovou i kulturní adaptaci, správu kanálů a komunikaci s českým publikem.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-<!--  <section  id="about" class="section about">
-    <div class="container">
-      <h3 data-key="mini_cta_heading"><strong>Začněte nezávazně – úvodní konzultace zdarma</strong></h3>
-        <p data-key="mini_cta_text">Zjistíme, jaké máte cíle, rozpočet i představy a navrhneme konkrétní cestu,
-          jak <strong>posunout marketing vaší firmy vpřed</strong>.</p>
-    </div>
-  </section> -->
-
-<!-- Contact -->
-<section id="contact" class="section contact">
+<main>
+<section id="uvod" class="hero">
   <div class="container">
-    <h2 data-key="contact_heading">Začněte nezávazně - úvodní konzultace zdarma</h2>
-    <form id="contactForm" action="https://formsubmit.co/info@smmarketing.cz" method="POST" class="contact-form">
-      <input type="hidden" name="_captcha" value="true">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_next" value="https://smmarketing.cz/">
-
-      <!-- Honeypot (neviditelné pole) -->
-      <input type="text" name="_honey" style="display:none">
-
-      <!-- Secret ID (ochrana proti botům) -->
-      <input type="hidden" name="_formsubmit_id" value="x8h3nd9a">
-
-      <div class="form-group">
-        <label for="name" data-key="contact_label_name">Vaše jméno</label>
-        <input type="text" id="name" name="name" placeholder="Tomáš Novák" required data-key="contact_placeholder_name" />
-      </div>
-
-      <div class="form-group">
-        <label for="email" data-key="contact_label_email">Váš e-mail</label>
-        <input type="email" id="email" name="email" placeholder="tomas.novak@chcibytvidet.cz" required data-key="contact_placeholder_email" />
-      </div>
-
-      <div class="form-group">
-        <label for="message" data-key="contact_label_message">Vaše zpráva</label>
-        <textarea id="message" name="message" rows="5" placeholder="Dobrý den, chci se nezávazně pobavit o možnostech spolupráce. Ozvěte se mi prosím." required data-key="contact_placeholder_message"></textarea>
-      </div>
-
-      <!-- reCAPTCHA widget -->
-      <div class="g-recaptcha" data-sitekey="6LfR8ZErAAAAAIZ0Hq9KYM69agcYDUU0myrdUE5M"></div>
-
-      <div id="thankYouMessage" style="display: none; color: green; margin-top: 1rem;" data-key="contact_thank_you">
-        Děkujeme za vaši zprávu!
-      </div>
-
-      <div class="submit-wrapper">
-        <button type="submit" class="btn btn-primary" data-key="contact_submit_text">Odeslat</button>
-      </div>
-    </form>
+    <span class="eyebrow">Marketingové služby a vzdělávání</span>
+    <h1>Marketing<br>se dá dělat <span class="mark">jinak</span></h1>
+    <p class="intro">Online marketing nabízí spoustu možností. Ráda vám ukážu, jak je využít – ať už potřebujete pomoc se svým marketingem, nebo se ho chcete naučit sami. Vyberte si, co vás zajímá.</p>
+    <div class="paths">
+      <a class="path" href="#sluzby">
+        <div>
+          <b>Marketingové služby</b>
+          <small>Strategie, obsah, správa sítí, kampaně</small>
+        </div>
+        <span class="circle" aria-hidden="true">↗</span>
+      </a>
+      <a class="path" href="#kurzy">
+        <div>
+          <b>Kurzy a školení</b>
+          <small>Praktické vzdělávání v online marketingu</small>
+        </div>
+        <span class="circle" aria-hidden="true">✳</span>
+      </a>
+    </div>
   </div>
 </section>
 
-<!-- Kurzy -->
-  <section id="kurzy" class="section kurzy">
-    <div class="container">
-      <span class="kurzy-badge">Online kurz</span>
-      <h2>Social Media Manager / Správce sociálních sítí</h2>
+<div class="ticker" aria-hidden="true">STRATEGIE ✳ OBSAH ✳ REKLAMA ✳ SOCIÁLNÍ SÍTĚ ✳ KURZY ✳ PRAXE</div>
 
-      <p>Kurz je zařazen do programu Jsem v kurzu. Na vzdělávání je možné čerpat příspěvek Úřadu práce ve výši až 76,73 % z celkové ceny. Vaše standardní spoluúčast tak činí pouze 23,27 %. V některých případech je podpora 100%.</p>
+<section id="sluzby" class="section">
+  <div class="container">
+    <div class="heading reveal">
+      <div>
+        <span class="pill">Marketingové služby</span>
+        <h2>Pro firmy<br>a značky</h2>
+      </div>
+      <p>Od první strategie přes tvorbu obsahu až po správu kampaní. Spolupráci vždy přizpůsobuji konkrétním potřebám vaší značky.</p>
+    </div>
+    <div class="services">
+      <article class="service reveal">
+        <div class="symbol" aria-hidden="true">✳</div>
+        <h3>Strategie a plánování</h3>
+        <p>Analýza výchozí situace, cílové skupiny, komunikační koncept, obsahový plán a doporučení konkrétních kroků.</p>
+      </article>
+      <article class="service reveal">
+        <div class="symbol" aria-hidden="true">◎</div>
+        <h3>Správa sociálních sítí</h3>
+        <p>Připravím obsahovou strategii, texty, grafiku a videa, postarám se o pravidelné publikování, komunikaci se sledujícími, budování komunity i vyhodnocování výsledků.</p>
+      </article>
+      <article class="service reveal">
+        <div class="symbol" aria-hidden="true">↗</div>
+        <h3>Reklamní kampaně</h3>
+        <p>Navrhnu a nastavím reklamní kampaně podle vašich cílů, budu průběžně optimalizovat rozpočty a výkon a připravím srozumitelné vyhodnocení.</p>
+      </article>
+    </div>
+    <div class="service-foot">
+      <a href="#kontakt" class="btn">Poptat spolupráci</a>
+      <span class="muted">Rozsah spolupráce a cenu řešíme individuálně.</span>
+    </div>
+  </div>
+</section>
 
-      <p>Nejbližší termíny kurzů s podporou MPSV startují 6. ledna 2027, 10. března 2027 a na konci dubna 2027</p>
+<section id="kurzy" class="section courses">
+  <div class="container">
+    <div class="heading reveal">
+      <div>
+        <span class="pill">Kurzy a školení</span>
+        <h2>Vzdělávání<br>v praxi</h2>
+      </div>
+      <p>Vedu praktické kurzy a školení, při kterých si nové dovednosti rovnou vyzkoušíte. Vycházím přitom ze zkušeností z každodenní marketingové praxe.</p>
+    </div>
+    <div class="course-grid">
+      <article class="course main reveal">
+        <div>
+          <span class="pill">Online kurz</span>
+          <h3>Social Media Manager</h3>
+          <p>Správa sociálních sítí od strategie přes obsah až po reklamu a vyhodnocování.</p>
+        </div>
+        <div>
+          <div class="chips">
+            <span>50 hodin</span>
+            <span>Živě online</span>
+            <span>Záznamy</span>
+            <span>Praktický projekt</span>
+          </div>
+          <a href="#detail-kurzu" class="btn">Prohlédnout kurz</a>
+          <a href="https://up.gov.cz/vyhledani-rekvalifikacniho-kurzu#/rekvalifikacni-kurz-detail/26653" class="btn outline" target="_blank" rel="noopener noreferrer">✳ Chci se přihlásit s dotací od ÚP</a>
+        </div>
+      </article>
+      <article class="course other reveal">
+        <div>
+          <span class="pill">Na míru</span>
+          <h3>Firemní školení</h3>
+          <p>Obsah a zaměření podle potřeb firmy nebo konkrétního týmu. Forma, délka a témata po domluvě.</p>
+        </div>
+        <a class="btn" href="#kontakt">Poptat školení</a>
+      </article>
+    </div>
 
-      <p>O přiznání příspěvku rozhoduje Úřad práce ČR.</p>
+    <div class="details reveal" id="detail-kurzu">
+      <div class="details-head">
+        <div>
+          <span class="eyebrow">Podrobnosti kurzu</span>
+          <h3>Správce sociálních sítí / Social Media Manager</h3>
+        </div>
+        <span class="pill">Jsem v kurzu · ÚP</span>
+      </div>
+      <p>Praktická výuka pro začátečníky a mírně pokročilé. V průběhu kurzu vzniká vlastní projekt, ke kterému se vztahují jednotlivé úkoly.</p>
+      <div class="stats">
+        <div class="stat"><strong>50 h</strong><small>živé online výuky</small></div>
+        <div class="stat"><strong>10×</strong><small>výukové setkání</small></div>
+        <div class="stat"><strong>24 990 Kč</strong><small>cena bez dotace včetně DPH</small></div>
+        <div class="stat"><strong>5 816 Kč</strong><small>vaše spoluúčast s dotací ÚP</small></div>
+      </div>
+      <div class="two">
+        <div>
+          <h4>Co se naučíte</h4>
+          <ul class="checks">
+            <li>Marketingová strategie a cílové skupiny</li>
+            <li>Plánování obsahu a copywriting</li>
+            <li>Facebook, Instagram a správa účtů</li>
+            <li>Canva, video a tvorba vizuálů</li>
+            <li>Reklama, analytika a vyhodnocování</li>
+            <li>AI, právní minimum a práce s klienty</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Jak výuka funguje</h4>
+          <ul class="checks">
+            <li>Živá výuka online a prostor na dotazy</li>
+            <li>Praktická cvičení a vlastní závěrečný projekt</li>
+            <li>Záznamy hodin a výukové prezentace</li>
+            <li>Průběžná možnost konzultace</li>
+            <li>Osvědčení po úspěšném absolvování</li>
+          </ul>
+        </div>
+      </div>
+      <h4>Nejbližší termíny</h4>
+      <div class="dates">
+        <div class="date"><strong>6. ledna 2027</strong><small>První běh</small></div>
+        <div class="date"><strong>10. března 2027</strong><small>Druhý běh</small></div>
+        <div class="date"><strong>28. dubna 2027</strong><small>Třetí běh</small></div>
+      </div>
+      <p>O příspěvek na kurz lze požádat prostřednictvím Úřadu práce ČR. <strong>S podáním přihlášky přes ÚP vám ráda osobně pomohu.</strong> Pokud si s postupem nevíte rady, napište mi nebo zavolejte.</p>
+      <p class="note">Cena 5 816 Kč představuje spoluúčast při přiznání standardního příspěvku ÚP. O jeho schválení rozhoduje Úřad práce ČR; podmínky, kapacita a uzávěrky se mohou změnit.</p>
+      <a href="https://up.gov.cz/vyhledani-rekvalifikacniho-kurzu#/rekvalifikacni-kurz-detail/26653" class="btn" target="_blank" rel="noopener noreferrer">✳ Chci se přihlásit s dotací od ÚP</a>
+      <a href="#kontakt" class="btn outline">Potřebuji pomoct s přihláškou</a>
+      <p class="cert-note">K přihlášce budete potřebovat: <a href="/docs/cestne-prohlaseni.docx" download>Čestné prohlášení účastníka</a></p>
 
-      <p><a href="https://up.gov.cz/vyhledani-rekvalifikacniho-kurzu#/rekvalifikacni-kurz-detail/26653" target="_blank" rel="noopener" class="btn btn-primary kurzy-cta">Chci se přihlásit na kurz s příspěvkem Úřadu práce</a></p>
-      <p class="kurzy-note">K přihlášce budete potřebovat: <a href="/docs/cestne-prohlaseni.docx" download>Čestné prohlášení účastníka</a></p>
-
-      <p>V tomto online kurzu se naučíte vše, co potřebujete pro práci správce sociálních sítí. Lektorka vám předá zkušenosti z praxe i postupy, které sama každý den používá při správě sociálních sítí pro své klienty.</p>
-
-      <p>Kurz je přímo pro vás, pokud chcete:</p>
-      <ul class="kurzy-list">
-        <li>začít pracovat jako správce sociálních sítí</li>
-        <li>nabízet správu sociálních sítí klientům</li>
-        <li>propagovat vlastní firmu nebo projekt</li>
-        <li>získat praktické dovednosti využitelné v praxi</li>
-      </ul>
-      <p>Kurz je vhodný pro začátečníky i mírně pokročilé.</p>
-
-      <h3>Co budete potřebovat?</h3>
-      <p>Nemusíte mít žádné zkušenosti s marketingem ani správou sociálních sítí.</p>
-      <p>Stačí vlastní počítač, připojení k internetu a chuť učit se nové věci.</p>
-
-      <h3>Co se v kurzu naučíte?</h3>
-      <p>Společně projdeme: tvorbu marketingové strategie, přípravu obsahu pro sociální sítě, práci s grafikou a videem, nastavení a analýzu reklam na sociálních sítích, využití AI v marketingu, komunikaci s klienty, jak získat klienty a nastartovat vlastní podnikání.</p>
-
-      <h3>Jak výuka probíhá?</h3>
-      <p>Každé téma si nejprve společně vysvětlíme a následně si ho ihned vyzkoušíte na praktických úkolech. Po celou dobu kurzu budete pracovat na vlastním projektu, díky kterému si nové znalosti rovnou osvojíte. Součástí kurzu jsou také individuální konzultace.</p>
-
-      <h3>Co od nás získáte?</h3>
-      <p>Během kurzu obdržíte řadu praktických materiálů, například obsahový plán, vzor smlouvy o spolupráci, tipy, kde hledat klienty, přehled nástrojů, které používám při své práci.</p>
-      <p><strong>Ke všem záznamům z výuky budete mít přístup ještě 3 měsíce po skončení kurzu.</strong></p>
-
-      <h3>Rozsah kurzu</h3>
-      <p>Kurz probíhá online v rozsahu 50 hodin. Výuka je rozdělena do 10 setkání po 5 hodinách, která se zpravidla konají ve středu a ve čtvrtek od 8:00 do 13:00. Po celou dobu kurzu máte navíc možnost využít individuální konzultace.</p>
-
-      <h3>Jak kurz zakončíte?</h3>
-      <p>Vaše znalosti budete průběžně prokazovat praktickými úkoly a závěrečným projektem.</p>
-      <p>Po úspěšném absolvování obdržíte osvědčení o absolvování kurzu.</p>
-
-      <h3>Cena</h3>
-      <p class="kurzy-price"><strong>24 990 Kč včetně DPH</strong></p>
-
-      <div class="kurzy-form-box">
-        <h3>Máte zájem o kurz?</h3>
+      <div class="interest">
+        <h4>Máte zájem o kurz?</h4>
         <p>Dejte nám o sobě vědět a my se vám brzy ozveme s dalšími informacemi.</p>
-        <form id="courseForm" class="kurzy-form" action="https://formsubmit.co/info@smmarketing.cz" method="POST">
+        <form class="interest-form" id="courseForm" action="https://formsubmit.co/info@smmarketing.cz" method="POST">
           <input type="hidden" name="_subject" value="Nová přihláška na kurz Social Media Manager">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="true">
-          <input type="hidden" name="_next" value="https://smmarketing.cz/#kurzy">
-
-          <!-- Honeypot (neviditelné pole) -->
-          <input type="text" name="_honey" style="display:none">
-
-          <div class="form-group">
-            <label for="course_name">Jméno a příjmení</label>
-            <input type="text" id="course_name" name="name" placeholder="Tomáš Novák" required />
-          </div>
-          <div class="form-group">
-            <label for="course_email">E-mail</label>
-            <input type="email" id="course_email" name="email" placeholder="tomas.novak@email.cz" required />
-          </div>
-          <div class="form-group">
-            <label for="course_phone">Telefon</label>
-            <input type="tel" id="course_phone" name="phone" placeholder="777 123 456" required />
-          </div>
-
-          <button type="submit" class="btn btn-primary">Odeslat</button>
+          <input type="hidden" name="_next" value="https://www.smmarketing.cz/kurzy?odeslano=1">
+          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+          <label>Jméno a příjmení<input type="text" name="name" autocomplete="name" placeholder="Jméno a příjmení" required></label>
+          <label>E-mail<input type="email" name="email" autocomplete="email" placeholder="vas@email.cz" required></label>
+          <label>Telefon<input type="tel" name="phone" autocomplete="tel" placeholder="777 123 456" required></label>
+          <button type="submit" class="btn">Odeslat</button>
         </form>
-      </div>
-
-      <div class="kurzy-video">
-        <iframe src="https://www.youtube.com/embed/wYDfKPVHcLI" title="Social Media Manager" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-
-      <p>Než se přihlásíte, můžete si prohlédnout také krátkou ukázku z kurzu, která vám přiblíží styl výuky i způsob, jakým společně pracujeme.</p>
-
-      <p>Máte otázky nebo si nejste jistí, jestli je kurz pro vás? Ozvěte se mi. Ráda vám poradím, zodpovím vaše dotazy a pomohu vám rozhodnout, zda je tento kurz tou správnou volbou.</p>
-    </div>
-  </section>
-
-  <!-- About Us -->
-  <section id="about" class="section about">
-    <div class="container">
-      <h2 data-key="about_heading">Jste v dobrých rukách</h2>
-        <p data-key="about_paragraph_1">SM Marketing vznikl z potřeby dělat marketing promyšleně, kvalitně a s opravdovým zájmem o to, co klientovi skutečně funguje. Věříme, že dobrý marketing není o náhodě, ale o správně nastaveném směru, detailu a práci, která dává smysl. Ke každému projektu proto přistupujeme individuálně, s respektem, pečlivostí a důrazem na výsledek.</p>
-        <p data-key="about_paragraph_2">Za značkou SM Marketing stojí Mariana Halmanová, marketérka s mnohaletou praxí v soukromém i veřejném sektoru.</p>
-    </div>
-  </section>
-
-  <!-- Recenze -->
-  <section id="reference" class="section references">
-    <div class="container">
-      <h2>Co říkají naši klienti</h2>
-      <!-- Trustmary Google Reviews widget -->
-      <script src="https://widget.trustmary.com/5VUS98EEq" async></script>
-    </div>
-  </section>
-
-
-  <!-- References / Testimonials
-  <section id="references" class="section references">
-    <div class="container">
-      <h2>Reference</h2>
-      <div class="testimonial">
-        <img src="/images/Ethan.jpg" alt="Ethan Johnson" class="avatar" />
-        <div class="testimonial-content">
-          <div class="testimonial-header">
-            <h4>Martin Knobl</h4>
-            <span class="date">15. 7. 2024</span>
-          </div>
-          <div class="stars">
-            <span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span>
-          </div>
-          <p>SM Marketing je úžasný! Spojil jsem se s tolika zajímavými lidmi a znovu objevil svou vášeň pro fotografii.</p>
-        </div>
-      </div>
-
-      <div class="testimonial">
-        <img src="/images/Olivia.jpg" alt="Olivia Carter" class="avatar" />
-        <div class="testimonial-content">
-          <div class="testimonial-header">
-            <h4>Sára Vyndalová</h4>
-            <span class="date">12. 3. 2023</span>
-          </div>
-          <div class="stars">
-            <span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star empty">★</span>
-          </div>
-          <p>Je to skvělá firma, ale pár funkcí by se ještě hodilo. Komunita je ale úžasná!</p>
-        </div>
-      </div>
-
-      <div class="testimonial">
-        <img src="/images/Noah.jpg" alt="Noah Miller" class="avatar" />
-        <div class="testimonial-content">
-          <div class="testimonial-header">
-            <h4>Nikolas Menšík</h4>
-            <span class="date">1. 2. 2025</span>
-          </div>
-          <div class="stars">
-            <span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span>
-          </div>
-          <p>Naprostá paráda! Funkce chatu v reálném čase je revoluční pro skupinové diskuze a plánování.</p>
-        </div>
+        <p class="form-note">Odesláním souhlasíte se zpracováním údajů za účelem odpovědi. Více v <a href="/legal.html#privacy">zásadách ochrany osobních údajů</a>.</p>
       </div>
     </div>
-  </section> -->
+  </div>
+</section>
 
-  <!-- Footer -->
-<footer class="footer">
-  <!--  <div class="container footer-links">
-      <a href="legal.html#terms">Podmínky užívání</a>
-      <a href="legal.html#privacy">Zásady ochrany osobních údajů</a>
-      <a href="legal.html#cookies">Zásady používání cookies</a>      
-    </div> -->
-  
-<div class="container">
-  <div class="social-icons">
-    <a href="https://www.facebook.com/profile.php?id=61566155831082" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#6B7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-        <path d="M18 2h-3a4 4 0 0 0-4 4v3H8v4h3v9h4v-9h3.28l.72-4H15V6a1 1 0 0 1 1-1h2z"/>
-      </svg>
-    </a>
-    <a href="https://www.linkedin.com/in/mariana-halmanov%C3%A1-6aa9739a/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#6B7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
-        <rect x="2" y="9" width="4" height="12"/>
-        <circle cx="4" cy="4" r="2"/>
-      </svg>
-    </a>        
-  </div>      
-</div>
-    <div class="container footer-info">
-      <div class="footer-info-col">
-        <strong>Mgr. Mariana Halmanová</strong>
-        <span>Novosibřinská 672, Praha, 190 16</span>
-        <span>IČO: 86645544</span>
-        <span>DIČ: 8452200064</span>
-      </div>
-      <div class="footer-info-col">
-        <span>Telefon: <a href="tel:+420775377054">775 377 054</a></span>
-        <span>Email: <a href="mailto:info@smmarketing.cz">info@smmarketing.cz</a></span>
-      </div>
+<section class="sample-section" id="ukazka-hodiny">
+  <div class="container sample-grid">
+    <div>
+      <span class="pill">Podívejte se dovnitř</span>
+      <h2>Ukázková hodina</h2>
+      <p>Zajímá vás, jak vypadají moje online lekce? Pusťte si krátkou ukázku výuky kurzu Social Media Manager.</p>
+      <p class="sample-note">Video se načte z YouTube až po kliknutí na přehrání.</p>
     </div>
-    <div class="container">
-      <p class="copyright" data-key="footer_copyright">© 2025 SM Marketing. All rights reserved.</p>
-      <p class="developer" data-key="footer_developer">
-        Created by Webnami
+    <div class="sample-video" id="sampleVideo">
+      <button class="sample-play" type="button" id="playSampleVideo" aria-label="Přehrát ukázkovou hodinu na YouTube">
+        <img src="https://i.ytimg.com/vi/wYDfKPVHcLI/hqdefault.jpg" width="480" height="360" alt="Náhled ukázkové hodiny Social Media Manager" loading="lazy">
+        <span aria-hidden="true">▶</span>Spustit ukázkovou hodinu
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="o-mne" class="section about">
+  <div class="container about-inner">
+    <div class="reveal">
+      <span class="pill">Osobní představení</span>
+      <h2>Ahoj,<br>jsem Mariana</h2>
+      <p>Jmenuji se Mariana Halmanová a věnuji se online marketingu jako externí marketingová manažerka, specialistka na sociální sítě a lektorka. Každý den pracuji s obsahem, kampaněmi a značkami, které mají své vlastní příběhy i výzvy.</p>
+      <p>Na své práci mám ráda, že žádné dva projekty nejsou stejné. Ráda hledám řešení, která odpovídají konkrétním lidem a jejich podnikání. A stejně přistupuji i k výuce – chci, abyste rozuměli tomu, co děláte, mohli si vše vyzkoušet a nebáli se ptát. Po celou dobu kurzu jsem vám k dispozici.</p>
+      <a class="btn alt" href="#kontakt">Napište mi</a>
+    </div>
+    <div class="portrait reveal">
+      <img src="/images/mariana-portret.webp" width="800" height="1067" loading="lazy" decoding="async" alt="Mariana Halmanová – marketingová manažerka a lektorka">
+      <div class="portrait-label">Mariana Halmanová</div>
+    </div>
+  </div>
+</section>
+
+<section id="recenze" class="section">
+  <div class="container">
+    <div class="heading reveal">
+      <div>
+        <span class="pill">Google hodnocení</span>
+        <h2>Recenze</h2>
+      </div>
+      <p>Zkušenosti klientů a účastníků kurzů, kteří se mnou spolupracovali.</p>
+    </div>
+    <!-- Živé Google recenze: Elfsight widget nastavený Marianou v účtu SM Marketing -->
+    <div id="googleReviews" aria-label="Recenze z Google">
+      <script src="https://elfsightcdn.com/platform.js" async></script>
+      <div class="elfsight-app-94af0cbe-01ce-4e02-8335-0b12f4ab7afb" data-elfsight-app-lazy></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq" style="padding-top:30px">
+  <div class="container faq">
+    <div>
+      <span class="pill">Nejčastější dotazy</span>
+      <h2>Co vás<br>zajímá?</h2>
+    </div>
+    <div>
+      <details>
+        <summary>Je kurz vhodný pro začátečníky?</summary>
+        <p>Ano. Kurz je vhodný pro úplné začátečníky i pro pokročilejší, kteří už se sociálními sítěmi pracují, ale chtějí získat komplexní přehled a dát si jednotlivé oblasti marketingu do souvislostí. Začínám od základů a postupně přecházím k praktickým úkolům.</p>
+      </details>
+      <details>
+        <summary>Musím mít během výuky zapnutou kameru?</summary>
+        <p>Ne, během výuky nemusíte mít zapnutou kameru ani mikrofon. Kameru musím mít zapnutou jen já – abyste věděli, kdo vám to všechno vypráví. 😊</p>
+      </details>
+      <details>
+        <summary>Získám přístup k záznamům?</summary>
+        <p>Ano. Všechny hodiny se nahrávají a účastníci získají přístup k záznamům i výukovým prezentacím. K probíranému obsahu se tak mohou vracet i po výuce.</p>
+      </details>
+      <details>
+        <summary>Jak funguje příspěvek Úřadu práce?</summary>
+        <p>Podpora závisí na konkrétních podmínkách a rozhodnutí ÚP. Přihláška se podává přes portál Jsem v kurzu.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt" class="section contact">
+  <div class="container contact-grid">
+    <div class="reveal">
+      <span class="pill">Kontakt</span>
+      <h2>Ozvěte se</h2>
+      <p>Zajímá vás kurz, školení nebo marketingová spolupráce? Napište, co potřebujete řešit.</p>
+      <p>
+        <a href="mailto:info@smmarketing.cz"><strong>info@smmarketing.cz</strong></a>
+        <br><a href="tel:+420775377054">+420 775 377 054</a>
       </p>
+      <p>Jsem také na WhatsAppu, kde mi můžete pohodlně napsat.</p>
+      <a class="btn alt" href="https://wa.me/420775377054" target="_blank" rel="noopener noreferrer">◉ Napsat na WhatsApp</a>
     </div>
-  </footer>
-  
+    <div class="reveal">
+      <form class="form" id="contactForm" action="https://formsubmit.co/info@smmarketing.cz" method="POST">
+        <input type="hidden" name="_subject" value="Nová zpráva z webu SM Marketing">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_next" value="https://www.smmarketing.cz/kontakt?odeslano=1">
+        <input type="hidden" name="_formsubmit_id" value="x8h3nd9a">
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+        <label>Co vás zajímá?
+          <select name="topic" required>
+            <option value="Kurz Social Media Manager">Kurz Social Media Manager</option>
+            <option value="Firemní školení">Firemní školení</option>
+            <option value="Marketingová spolupráce">Marketingová spolupráce</option>
+            <option value="Jiný dotaz">Jiný dotaz</option>
+          </select>
+        </label>
+        <label>Vaše jméno<input name="name" autocomplete="name" required placeholder="Jméno a příjmení"></label>
+        <label>Váš e-mail<input name="email" type="email" autocomplete="email" required placeholder="vas@email.cz"></label>
+        <label>Vaše zpráva<textarea name="message" placeholder="S čím vám mohu pomoci?" required></textarea></label>
+        <button class="btn" type="submit">Odeslat zprávu</button>
+        <p class="form-note">Odesláním souhlasíte se zpracováním údajů za účelem odpovědi. Více v <a href="/legal.html#privacy">zásadách ochrany osobních údajů</a>.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
 
-  <!-- Link to .js file with the form -->
-  <script src="script.js"></script>
-  <!-- Link to .js file with the toggle -->
-  <script src="toggle.js"></script>
-  <!-- Script pro CMS -->
-  <script>
-  window.addEventListener("DOMContentLoaded", function () {
-    fetch("https://api.sheetbest.com/sheets/8faed474-1ef0-4af4-8ecb-c6eee993d4ef")
-      .then(res => res.json())
-      .then(data => {
-        console.log("✔️ Načteno řádků:", data.length);
-        console.log("🔍 První položka:", data[0]);
+<footer class="footer">
+  <div class="container">
+    <div class="footline">
+      <div>
+        <div class="logo">SM marketing<span class="dot"></span></div>
+        <p>Marketingové služby a vzdělávání</p>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <p><a href="mailto:info@smmarketing.cz">info@smmarketing.cz</a></p>
+        <p><a href="tel:+420775377054">+420 775 377 054</a> · <a href="https://wa.me/420775377054" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
+        <p>Praha · online po celé ČR</p>
+      </div>
+      <div>
+        <h4>Fakturační údaje</h4>
+        <address>
+          Mgr. Mariana Halmanová<br>
+          Novosibřinská 672, Praha, 190 16<br>
+          IČO: 86645544<br>
+          DIČ: 8452200064
+        </address>
+      </div>
+    </div>
+    <div class="footbottom">
+      <span>© SM Marketing · Mariana Halmanová</span>
+      <a href="/legal.html">Podmínky užívání, ochrana osobních údajů a cookies</a>
+    </div>
+  </div>
+</footer>
 
-        data.forEach(item => {
-          const key = item.key || item.Key;
-          const value = item.value || item.Value;
+<div class="toast" id="toast" role="status" hidden>Děkuji, zpráva byla odeslána. Brzy se vám ozvu.</div>
 
-          const el = document.querySelector(`[data-key="${key}"]`);
-          if (el) {
-            if ('placeholder' in el) {
-              el.placeholder = value;
-            } else if (el.tagName === 'TITLE') {
-              document.title = value;
-            } else if (el.tagName === 'META') {
-              el.setAttribute("content", value);
-            } else {
-              el.textContent = value;
-            }
-          } else {
-            console.warn(`⚠️ Element s data-key="${key}" nebyl nalezen.`);
-          }
-        });
-      })
-      .catch(error => {
-        console.error("❌ Chyba při načítání obsahu:", error);
-      });
-  });
-  </script>
-  <!-- Script pro reCAPTCHu -->
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
+<script src="/site.js"></script>
 </body>
 </html>
