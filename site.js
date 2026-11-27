@@ -98,6 +98,33 @@
     document.getElementById('sampleVideo').replaceChildren(iframe);
   });
 
+  // ----- Elfsight: skrytí štítku bezplatného tarifu (widget si třídy generuje, proto hledáme podle textu) -----
+  var reviews = document.getElementById('googleReviews');
+  function hideElfsightLabel(root) {
+    var all = root.querySelectorAll('*');
+    for (var i = 0; i < all.length; i++) {
+      var el = all[i];
+      if (el.shadowRoot) hideElfsightLabel(el.shadowRoot);
+      if (el.children.length === 0 && /^\s*Free Google Reviews Widget\s*$/i.test(el.textContent)) {
+        var box = el.closest('a') || el;
+        box.style.setProperty('display', 'none', 'important');
+      }
+    }
+  }
+  if (reviews) {
+    var labelTicking = false;
+    new MutationObserver(function () {
+      if (labelTicking) return;
+      labelTicking = true;
+      window.requestAnimationFrame(function () { labelTicking = false; hideElfsightLabel(reviews); });
+    }).observe(reviews, { childList: true, subtree: true });
+    var labelTries = 0;
+    var labelTimer = setInterval(function () {
+      hideElfsightLabel(reviews);
+      if (++labelTries > 40) clearInterval(labelTimer);
+    }, 500);
+  }
+
   // ----- Odesílání formulářů bez opuštění stránky (formsubmit AJAX) -----
   var toast = document.getElementById('toast');
   var toastTimer;
