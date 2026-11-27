@@ -53,6 +53,32 @@
     else setUrl(location.pathname);
   });
 
+  // ----- Adresa v prohlížeči se mění podle toho, kde na stránce jsem -----
+  // [id elementu, adresa]; ukázková hodina patří ke kurzům, FAQ k recenzím
+  var SPY = [
+    ['uvod', '/'], ['sluzby', '/sluzby'], ['kurzy', '/kurzy'], ['ukazka-hodiny', '/kurzy'],
+    ['o-mne', '/o-mne'], ['recenze', '/recenze'], ['faq', '/recenze'], ['kontakt', '/kontakt']
+  ].map(function (p) { return { el: document.getElementById(p[0]), url: p[1] }; })
+   .filter(function (p) { return p.el; });
+  var spyTicking = false;
+
+  function spyUpdate() {
+    spyTicking = false;
+    var url = SPY[0].url;
+    var atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+    if (atBottom) {
+      url = SPY[SPY.length - 1].url;
+    } else {
+      for (var i = 0; i < SPY.length; i++) {
+        if (SPY[i].el.getBoundingClientRect().top <= 160) url = SPY[i].url; else break;
+      }
+    }
+    if (location.pathname !== url) setUrl(url);
+  }
+  window.addEventListener('scroll', function () {
+    if (!spyTicking) { spyTicking = true; window.requestAnimationFrame(spyUpdate); }
+  }, { passive: true });
+
   // Otevření přímo na /kurzy, /kontakt apod.
   window.addEventListener('load', function () {
     var path = location.pathname.replace(/^\/|\/$/g, '');
