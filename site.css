@@ -98,9 +98,6 @@ img{max-width:100%}
 .date small{display:block;margin-top:8px}
 .note{font-size:13px;color:#555;margin-top:18px}
 .details>.btn+.btn{margin-top:9px}
-.cert-note{font-size:14px;font-style:italic;color:#666;margin:12px 0 0}
-.cert-note a{text-decoration:underline;text-underline-offset:3px}
-.cert-note a:hover{color:var(--violet)}
 
 /* Zájem o kurz (přihláška) */
 .interest{background:var(--lilac);border:2px solid var(--ink);border-radius:22px;padding:30px;margin-top:34px}
